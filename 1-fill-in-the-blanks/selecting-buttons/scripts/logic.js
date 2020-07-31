@@ -13,9 +13,10 @@ function generateMessage(text) {
   if (!text) {
     return '';
   } else {
-    return __ + text;
+    return `selected: \n` + text;
   }
 }
+
 
 testing(generateMessage, generateMessageTests);
 
@@ -32,7 +33,7 @@ const keyIsEnterTests = [
 ];
 
 function keyIsEnter(keyCode) {
-  return keyCode === __
+  return keyCode === Number(keyCode)
     ? true
     : false;
 }

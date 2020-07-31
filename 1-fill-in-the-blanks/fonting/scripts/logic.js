@@ -25,12 +25,13 @@ const editorClassesTests = [
 function editorClasses(emphasis, size, color) {
   let classes = '';
 
+
   if (emphasis === 'bold'
     || emphasis === 'italic') {
     classes += emphasis;
   }
-  if (size === '__'
-    || size === '__') {
+  if (size === 'small'
+    || size === 'large') {
     classes += ' ' + size;
   }
   if (color === 'green'
@@ -40,7 +41,7 @@ function editorClasses(emphasis, size, color) {
     classes += ' ' + color;
   }
 
-  return __;
+  return classes;
 }
 
 testing(editorClasses, editorClassesTests);

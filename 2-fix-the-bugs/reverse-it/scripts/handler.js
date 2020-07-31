@@ -1,18 +1,19 @@
 function reverseHandler(event) {
-  // read user input
-  const userInput = event.input.value;
-
+  debugger;
+  // read & process user input
+  const userInput = event.target.input;
+ 
   // execute core logic
-  const reverse = reversed(userInput);
-
-  // communicate result to user
-  document.getElementById('programOutput').innerHtml = reverse;
+  const reversed = reverse(userInput);
+console.log(reversed);
+  // display results to user
+  document.getElementById('program-output').innerHTML = reversed;
 
   // log action for developers
   console.log('\n-- user action --');
-  console.log('userInput:', userInput);
-  console.log('reversed:', reversed);
+  console.log('userInput:', '(' + typeof userInput + ')', userInput);
+  console.log('reversed:', '(' + typeof reversed + ')', reversed);
 
-  // for the browser
+  // tell the browser everything is OK
   return true;
-}
+  }

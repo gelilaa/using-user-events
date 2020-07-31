@@ -1,4 +1,5 @@
 function typeCastHandler(event) {
+  debugger;
   // read & process user input
   const form = event.target.form;
   const intendedType = form.type.value;

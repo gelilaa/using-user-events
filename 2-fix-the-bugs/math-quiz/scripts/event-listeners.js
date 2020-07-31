@@ -1,2 +1,2 @@
-document.getElementById('user-story').addEventListener('mouseOver', showResult);
-document.getElementById('user-story').addEventListener('mouseOut', hideResult);
+document.getElementById('program-output').addEventListener('mouseout', showResult);
+document.getElementById('program-output').addEventListener('mouseover', hideResult);
