@@ -6,7 +6,7 @@ function typeCastHandler(event) {
   const stringToCast = form.value.value;
 
   // execute core logic
-  const newValue = typeCaster(stringToCast, intendedType);
+  const newValue = typeCaster(stringToCast,intendedType);
 
   // communicate result to user
   document.getElementById('casted-value').innerHTML = typeof newValue + ': ' + newValue;
